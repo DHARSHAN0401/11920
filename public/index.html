@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>URL Shortener</title>
+    <link rel="stylesheet" href="./main.css" />
+  </head>
+  <body>
+    <div id="root"></div>
+    <script>
+      
+      window.myLoggingMiddleware = function(eventType, details) {
+        var logDiv = document.getElementById('log-output');
+        if (logDiv) {
+          var msg = document.createElement('div');
+          msg.textContent = '[' + eventType + '] ' + JSON.stringify(details);
+          logDiv.appendChild(msg);
+        }
+      };
+    </script>
+    <div id="log-output"></div>
+  </body>
+</html>
