@@ -1,6 +1,3 @@
-<<<<<<< HEAD
-# 113022243027
-=======
 # URL Shortener Frontend
 
 A beginner-friendly React application for shortening URLs, with centralized logging and simple CSS styling.
